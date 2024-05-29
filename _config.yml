@@ -6,7 +6,7 @@ baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're sit
 description: > # description of the site (multiple lines allowed)
   안녕하세요 👋 어제보다 더 나은 개발자가 되고싶은 김현균입니다.
 
-permalink: /:slug.html
+permalink: /:slug
 
 favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
 # goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
@@ -25,3 +25,11 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# ----------------------------------------------------------------------------------------
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+google_analytics: G-RRJ69FPLQY

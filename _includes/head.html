@@ -4,16 +4,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>
-    {%- if page.title -%}
-      {{ page.title }}
-    {%- else -%}
-      {{ site.title }}
-    {%- endif -%}
+    {%- if page.title -%} {{ page.title }} {%- else -%} {{ site.title }} {%-
+    endif -%}
   </title>
 
-  {%-seo title=false-%}
-  {%-feed_meta-%}
+  {%-seo title=false-%} {%-feed_meta-%}
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
+  <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="{{ site.favicon | relative_url }}"
+  />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-RRJ69FPLQY"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-RRJ69FPLQY");
+  </script>
 </head>
