@@ -1,0 +1,1 @@
+https://lovedh.tistory.com/entry/Ubuntu-2004%EC%97%90%EC%84%9C-swap-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0

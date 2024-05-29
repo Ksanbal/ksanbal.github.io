@@ -24,7 +24,8 @@ html, body { background: white; }
 html { height: 100%; }
 
 body {
-  color: black;
+  color: white;
+  background-color: #0C1116;
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -69,7 +70,9 @@ table, th, td {
 
 code {
   color: white;
-  background: black;
+  background: #161B22;
+  outline: 1px solid #31363D;
+  border-radius: 5px;
 }
 
 div.highlighter-rouge code {
@@ -91,4 +94,8 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+a {
+  color: #2F81F7;
 }

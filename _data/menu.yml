@@ -6,13 +6,8 @@ entries:
     entries:
       - title: github
         url: https://github.com/Ksanbal
+      - title: about
+        url: about
 
   - title: all posts
-    post_list:
-      limit: 5
-      show_more: true
-      show_more_text: See archive...
-      show_more_url: archive.html
-  
-  - title: About
-    url: about
+    post_list: true
