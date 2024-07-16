@@ -4,28 +4,38 @@
   img {
     filter: invert(1);
 
-    &.ioda { filter: invert(0); }
+    &.ioda {
+      filter: invert(0);
+    }
   }
 }
 
-body[a="dark"] { @include dark-appearance; }
-
+body[a="dark"] {
+  @include dark-appearance;
+}
 
 @media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
+  body[a="auto"] {
+    @include dark-appearance;
+  }
 }
 // -------------------------------------------- //
 
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+html,
+body {
+  background: white;
+}
 
-html { height: 100%; }
+html {
+  height: 100%;
+}
 
 body {
   color: white;
-  background-color: #0C1116;
+  background-color: #0c1116;
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -34,17 +44,33 @@ body {
   overflow-wrap: break-word;
 }
 
-.post-meta { text-align: right; }
+.post-meta {
+  text-align: right;
+}
 
-h2, h3, h4, h5, h6 { margin-top: 3rem; }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3rem;
+}
 
-hr { margin: 2rem 0; }
+hr {
+  margin: 2rem 0;
+}
 
-p { margin: 1rem 0; }
+p {
+  margin: 1rem 0;
+}
 
-li { margin: 0.4rem 0; }
+li {
+  margin: 0.4rem 0;
+}
 
-*:target { background: yellow; }
+*:target {
+  background: yellow;
+}
 
 .w {
   max-width: 640px;
@@ -56,13 +82,21 @@ hr {
   text-align: center;
   border: 0;
 
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
+  &:before {
+    content: "/////";
+  }
+  &:after {
+    content: attr(data-content) "/////";
+  }
 }
 
-table { width: 100%; }
+table {
+  width: 100%;
+}
 
-table, th, td {
+table,
+th,
+td {
   border: thin solid black;
   border-collapse: collapse;
   padding: 0.4rem;
@@ -70,8 +104,8 @@ table, th, td {
 
 code {
   color: white;
-  background: #161B22;
-  outline: 1px solid #31363D;
+  background: #161b22;
+  outline: 1px solid #31363d;
   border-radius: 5px;
 }
 
@@ -87,15 +121,18 @@ blockquote {
   border: thin solid black;
   padding: 1rem;
 
-  p { margin: 0; }
+  p {
+    margin: 0;
+  }
 }
 
 img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 a {
-  color: #2F81F7;
+  color: #2f81f7;
 }
