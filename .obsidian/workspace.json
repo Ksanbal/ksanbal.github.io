@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "46d7047da0fcefd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e18d3819619e7b85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e99cf50c027afe1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f5aed0c467c8ebbe",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4676dc2505d537a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f39a630607d63e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cf7bac1e884f7b2f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0445a2823a663726",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9da19ab54cf818cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "7447cb5cedf10766",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d19fda349437dc0b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/post/hello-world/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "9ad6bb46673cac1d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/post/hello-world/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "ec5e7641faad7664",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5d69420443defc9c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/post/hello-world/index.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7e99cf50c027afe1",
+  "lastOpenFiles": [
+    "public/tags/page/5/index.html",
+    "public/tags/page/5",
+    "public/categories/flutter/page/3/index.html",
+    "public/categories/flutter/page/3",
+    "public/categories/page/2/index.html",
+    "public/categories/page/2",
+    "public/categories/docker/page/2/index.html",
+    "public/categories/docker/page/2",
+    "content/categories/AWS/_index.md",
+    "content/categories/AWS",
+    "public/categories/회고-copy/index.xml",
+    "public/categories/회고-copy/page/1/index.html",
+    "content/categories/회고 copy/_index.md",
+    "content/categories/nestjs/_index.md",
+    "content/categories/wil copy/_index.md",
+    "content/categories/Docker/_index.md",
+    "content/categories/Flutter copy/_index.md",
+    "content/categories/Flutter/_index.md",
+    "content/post/2021-09-10-Python dictionary로 Class instance 생성하기/2021-09-10-Python dictionary로 Class instance 생성하기.md",
+    "content/post/2021-09-16-Nginx & Docker Local에서 멀티 도메인 지원하기(FastAPI에서 Django Admin 쓰기)/2021-09-16-Nginx & Docker Local에서 멀티 도메인 지원하기(FastAPI에서 Django Admin 쓰기).md",
+    "content/post/2021-09-24-Flutter CocoaPods could not find compatible versions for pod \"FirebaseMessaging\" on M1 해결법/2021-09-24-Flutter CocoaPods could not find compatible versions for pod \"FirebaseMessaging\" on M1 해결법.md",
+    "content/post/2021-09-29-Flutter 문법 Tip/2021-09-29-Flutter 문법 Tip.md",
+    "content/post/2021-09-30-Flutter Drawer Programmatic하게 다루기/2021-09-30-Flutter Drawer Programmatic하게 다루기.md",
+    "content/post/2021-10-07-Docker, Nginx Log 설정하기/2021-10-07-Docker, Nginx Log 설정하기.md",
+    "content/post/2021-10-13-Flutter secure storage - platformException/2021-10-13-Flutter secure storage - platformException.md",
+    "content/post/2021-11-18-서버 실행시 Docker-compose 자동 실행하기/2021-11-18-서버 실행시 Docker-compose 자동 실행하기.md",
+    "content/post/2021-11-19-Nginx 504 Gateway Timeout 해결하기/2021-11-19-Nginx 504 Gateway Timeout 해결하기.md",
+    "content/post/2022-01-03-GoLang 문법 시작하기/2022-01-03-GoLang 문법 시작하기.md",
+    "content/post/2022-01-17-GoLang CSV 다루기/2022-01-17-GoLang CSV 다루기.md",
+    "content/post/2022-05-09-FastAPI Swagger BasicAuth 적용하기/2022-05-09-FastAPI Swagger BasicAuth 적용하기.md",
+    "content/post/2022-08-04-Docker에서 django-crontab 적용하기/2022-08-04-Docker에서 django-crontab 적용하기.md",
+    "content/post/2022-11-15-git cofig로 아이디, 비밀번호 저장하기/2022-11-15-git cofig로 아이디, 비밀번호 저장하기.md",
+    "content/post/2022-11-17-EC2에 GitLab CICD 이용한 자동배포 완성하기!/2022-11-17-EC2에 GitLab CICD 이용한 자동배포 완성하기!.md",
+    "content/post/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화)/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화).md",
+    "content/post/2022-11-19-Docker와 crontab 구성하기/2022-11-19-Docker와 crontab 구성하기.md",
+    "content/post/2022-11-28-Localhost와 Docker-compose 네트워크 연결하기/2022-11-28-Localhost와 Docker-compose 네트워크 연결하기.md",
+    "content/post/2024-08-17-항해 플러스 백엔드 챕터3를 마무리하며.../358832216-62041548-7a8d-47e6-8b35-391dbdfcc1cb.png",
+    "content/post/항해 플러스 백엔드 챕터3를 마무리하며.../358832216-62041548-7a8d-47e6-8b35-391dbdfcc1cb.png",
+    "content/post/hello-world/cover.jpg"
+  ]
+}
