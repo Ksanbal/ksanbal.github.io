@@ -3,7 +3,8 @@ title:
 description: 
 date: 
 image: 
-categories:
-tags:
+categories: 
+tags: 
 weight: 1
+draft: false
 ---

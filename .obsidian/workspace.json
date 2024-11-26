@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e18d3819619e7b85",
+        "id": "da1cbb0d68133e79",
         "type": "tabs",
         "children": [
           {
-            "id": "7e99cf50c027afe1",
+            "id": "5462e05d2046f2c4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "templates/post.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "post"
             }
           }
         ]
@@ -39,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -56,7 +60,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "검색"
             }
           },
           {
@@ -89,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/hello-world/index.md",
+                "file": "templates/post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "post의 백링크"
             }
           },
           {
@@ -108,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/hello-world/index.md",
+                "file": "templates/post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "post의 나가는 링크"
             }
           },
           {
@@ -135,31 +139,45 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/hello-world/index.md"
+                "file": "templates/post.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "post 개요"
+            }
+          },
+          {
+            "id": "39483810e54b50ea",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "obsidian-git:Open Git source control": false,
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7e99cf50c027afe1",
+  "active": "5462e05d2046f2c4",
   "lastOpenFiles": [
+    "vendor/modules.txt",
+    "vendor",
+    "templates/post.md",
     "public/tags/page/5/index.html",
     "public/tags/page/5",
     "public/categories/flutter/page/3/index.html",
@@ -170,8 +188,6 @@
     "public/categories/docker/page/2",
     "content/categories/AWS/_index.md",
     "content/categories/AWS",
-    "public/categories/회고-copy/index.xml",
-    "public/categories/회고-copy/page/1/index.html",
     "content/categories/회고 copy/_index.md",
     "content/categories/nestjs/_index.md",
     "content/categories/wil copy/_index.md",
@@ -195,7 +211,6 @@
     "content/post/2022-11-17-EC2에 GitLab CICD 이용한 자동배포 완성하기!/2022-11-17-EC2에 GitLab CICD 이용한 자동배포 완성하기!.md",
     "content/post/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화)/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화).md",
     "content/post/2022-11-19-Docker와 crontab 구성하기/2022-11-19-Docker와 crontab 구성하기.md",
-    "content/post/2022-11-28-Localhost와 Docker-compose 네트워크 연결하기/2022-11-28-Localhost와 Docker-compose 네트워크 연결하기.md",
     "content/post/2024-08-17-항해 플러스 백엔드 챕터3를 마무리하며.../358832216-62041548-7a8d-47e6-8b35-391dbdfcc1cb.png",
     "content/post/항해 플러스 백엔드 챕터3를 마무리하며.../358832216-62041548-7a8d-47e6-8b35-391dbdfcc1cb.png",
     "content/post/hello-world/cover.jpg"
