@@ -1,7 +1,7 @@
 ---
 title: WIL
 description: Weekly I Learn
-image:
+image: wil.jpg
 
 # Badge style
 style:

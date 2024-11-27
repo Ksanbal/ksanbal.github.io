@@ -1,7 +1,7 @@
 ---
 title: NestJS
 description: 
-image:
+image: nestjs.png
 
 # Badge style
 style:

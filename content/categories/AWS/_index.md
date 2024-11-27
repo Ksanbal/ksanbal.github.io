@@ -1,7 +1,7 @@
 ---
 title: AWS
 description: 
-image:
+image: aws.png
 
 # Badge style
 style:

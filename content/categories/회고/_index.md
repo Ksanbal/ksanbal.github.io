@@ -1,7 +1,7 @@
 ---
 title: 회고
 description: 
-image:
+image: 회고.jpg
 
 # Badge style
 style:
