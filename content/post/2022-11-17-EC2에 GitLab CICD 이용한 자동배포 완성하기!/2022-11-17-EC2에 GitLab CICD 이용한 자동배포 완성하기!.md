@@ -14,7 +14,7 @@ weight: 1
 
 전부터 CI/CD를 구성하고 싶었는데, Jenkins니 Kubernetes니 뭔가 어렵게 느껴져서 쉽게 적용하지 못하고 있다가, 우연히 GitLab CI/CD 적용법을 알게되서 적용해보게 되었다. Gitlab을 사용하는 회사에서는 자연스럽게 GitLab CI/CD를 선택한다니까, 믿고 쓸만한 것 같다. 완전 무료는 아닌 것 같지만, 무료로 제공해주는만큼만 써도 그게 어디야…
 
-# 구조
+## 구조
 
 내가 그동안 배포를 진행하던 방식은 이렇다.
 
@@ -34,7 +34,7 @@ weight: 1
 
 이렇게 보니까 그렇게 간단해진건 아닌 것 같지만, 나는 앞으로 push만 하면 되는거니까 개꿀…
 
-# EC2에 gitlab-runner 설치하기
+## EC2에 gitlab-runner 설치하기
 
 1. GitLab-CI는 설치형이기 때문에 EC2에 해당 프로그램을 설치해야한다.
     
@@ -98,7 +98,7 @@ weight: 1
 
 6. 미리 열어둔 Settings → CI/CD → Runners에 가보면 runner가 등록된 것을 확인할 수 있다.
 
-# `.gitlab-ci.yml` 작성하기
+## `.gitlab-ci.yml` 작성하기
 
 repository 최상단에 들어가게될 .gitlab-ci.yml을 작성해주자! runner가 실행될때 실제로 돌아게될 코드들을 작성하면 된다. 공식문서를 참고한건 아니고…여러 블로그를 조합한 결과이기 떄문에 너무 맹신하지는 말자ㅎ
 
@@ -136,7 +136,7 @@ deploy-to-server:
     - deploy
 ```
 
-# 잘 돌아가나 확인해보기
+## 잘 돌아가나 확인해보기
 
 deploy branch로 push해서 정상적으로 작동하는지 확인해보자! GitLab → CI/CD → Piplines에 들어가면 현재 상황을 체크할 수 있다!
 
@@ -144,7 +144,7 @@ deploy branch로 push해서 정상적으로 작동하는지 확인해보자! Git
 
 위처처럼 뜨면 성공!!! 체크표시를 클릭해서 들어가면 실행된 코드를 볼 수 있다. 실패했을때 왜 실패했는지 체크가 쉬우니까 꼭 확인해보자!
 
-# 내가 겪었던 오류들…
+## 내가 겪었던 오류들…
 - Permission deny…
     처음에 gitlab을 설치할때 타 블로그를 보고 `--user=gitlab-runner`로 설정했었다. 나는 root로 설정했어야헀는데;;; 그래서 삭제한 후 `--user=root`로 재설치를 진행했다.
 - 실패이유를 확인할 수가 없어…?

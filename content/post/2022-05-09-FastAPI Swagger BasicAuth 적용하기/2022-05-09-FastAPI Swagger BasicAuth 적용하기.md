@@ -22,16 +22,16 @@ weight: 1
 > [HTTP Basic Auth - FastAPI](https://fastapi.tiangolo.com/advanced/security/http-basic-auth/)
 > 
 
-# 아이디어
+## 아이디어
 
 - 기본적인 아이디어는 이렇다. 자동으로 생성되는 docs, openbapi.json, redoc을 비활성화 시킨다.
 - docs로 접근하면 아이디 & 비밀번호를 체크한다.
 - 아이디 & 비밀번호가 일치하면 Swagger를 반환한다.
 - 끝
 
-# 구현
+## 구현
 
-## 기본 swagger 비활성화
+### 기본 swagger 비활성화
 
 - 기본 swagger를 비활성화하는 이유는 활성화되어 있으면 내가 만든 router를 거치지 않기 때문이다. 기본적으로 auth 기능이 있는 것 같긴하지만 공식문서에도 정리가 되어있지 않아서 찾을 수 없었다;;;
 
@@ -39,7 +39,7 @@ weight: 1
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 ```
 
-## 아이디 & 비밀번호 체크 함수 작성
+### 아이디 & 비밀번호 체크 함수 작성
 
 - dependencies로 사용할 비밀번호 체크 함수를 작성한다. 여기서 인증 방식은 db에 저장된 방식을 쓸 수도 있고, 자유롭게 선택할 수 있지만 나는 .env에 값을 저장하고 사용하는 방식으로 간단하게 만들어봤다.
 
@@ -59,7 +59,7 @@ def checkSecure(credentials: HTTPBasicCredentials = Depends(HTTPBasic())):
     raise HTTPException(status_code=401,detail='invalid account')
 ```
 
-## Swagger router 적용
+### Swagger router 적용
 
 - 위에 작성한 함수를 dependencies로 적용하고 swagger를 반환하자.
 여기서 포인트는 openapi.json을 이용해서 swagger ui를 만들어주는 함수를 사용하기 때문에 `/docs`뿐만 아니라 `/openapi.json`도 꼭 활성화시켜줘야한다.
@@ -77,7 +77,7 @@ def getDocs():
     return get_swagger_ui_html(openapi_url='/openapi.json', title='docs')
 ```
 
-# 그러면 뺌!
+### 그러면 뺌!
 
 ![스크린샷 2022-05-10 오전 9.15.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90039b65-d9f8-43d9-86c8-90edcde8c671/스크린샷_2022-05-10_오전_9.15.39.png)
 
