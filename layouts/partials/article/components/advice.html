@@ -1,0 +1,10 @@
+<blockquote class="article-advice"></blockquote>
+
+<script>
+    (async function() {
+        const res = await fetch('https://api.adviceslip.com/advice');
+        const json = await res.json();
+        const advice = json.slip.advice;
+        document.querySelector('.article-advice').innerHTML = `" ${advice} "`;
+    })();
+</script>

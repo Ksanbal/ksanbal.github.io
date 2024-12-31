@@ -1,3 +1,35 @@
 /*
     You can add your own custom styles here.
 */
+:root {
+    // 인용구 텍스트 색 변수
+    --quote-text-color-main: #000;
+    &[data-scheme="dark"] {
+        --quote-text-color-main: rgba(255, 255, 255, 0.9);
+    }
+}
+
+// 인용구 스타일
+.article-advice {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--quote-text-color-main);
+
+    text-align: center;
+
+    position: relative;
+    border-radius: 10px;
+    margin: 15px calc(var(--card-padding) - var(--blockquote-border-size));
+    padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
+    background-color: var(--blockquote-background-color);
+
+    .cite {
+        display: block;
+        text-align: right;
+        font-size: 0.75em;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
