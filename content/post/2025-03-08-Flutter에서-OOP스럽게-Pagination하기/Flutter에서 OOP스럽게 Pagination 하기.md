@@ -262,3 +262,7 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
   }
 }
 ```
+
+## 결론
+
+이번에는 페이지네이션에 대해서만 이야기했지만 반복적인 기능에 대해서 공통적으로 적용할 수 있는 부분인 것 같다.
