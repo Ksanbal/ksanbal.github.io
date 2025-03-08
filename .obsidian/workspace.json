@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c92ccd9974395194",
+        "id": "e639e8e756030798",
         "type": "tabs",
         "children": [
           {
-            "id": "a404bf2a62b1db93",
+            "id": "8dc0a00056ae75fb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2025-03-08-Flutter에서-OOP스럽게-Pagination하기/Flutter에서 OOP스럽게 Pagination 하기.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Flutter에서 OOP스럽게 Pagination 하기"
             }
           }
         ]
@@ -36,10 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -73,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 597.5,
+    "collapsed": true
   },
   "right": {
     "id": "9da19ab54cf818cd",
@@ -160,17 +166,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a404bf2a62b1db93",
+  "active": "8dc0a00056ae75fb",
   "lastOpenFiles": [
+    "content/post/2025-03-08-Flutter에서-OOP스럽게-Pagination하기",
+    "content/post/2025-03-08-Flutter에서-OOP스럽게-Pagination하기/Flutter에서 OOP스럽게 Pagination 하기.md",
     "templates/post.md",
     "public/tags/항해솔직후기/page/1/index.html",
     "public/tags/항해솔직후기/page/1",
@@ -214,7 +222,6 @@
     "content/post/2022-08-04-Docker에서 django-crontab 적용하기/2022-08-04-Docker에서 django-crontab 적용하기.md",
     "content/post/2022-11-15-git cofig로 아이디, 비밀번호 저장하기/2022-11-15-git cofig로 아이디, 비밀번호 저장하기.md",
     "content/post/2022-11-17-EC2에 GitLab CICD 이용한 자동배포 완성하기!/2022-11-17-EC2에 GitLab CICD 이용한 자동배포 완성하기!.md",
-    "content/post/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화)/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화).md",
-    "content/post/2022-11-19-Docker와 crontab 구성하기/2022-11-19-Docker와 crontab 구성하기.md"
+    "content/post/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화)/2022-11-17-NestJS으로  AES Encryption & Decryption(암호화&복호화).md"
   ]
 }
