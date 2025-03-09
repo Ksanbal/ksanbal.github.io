@@ -2,7 +2,7 @@
 title: Flutter에서 OOP스럽게 Pagination 하기
 description:
 image: Gemini_Generated_Image_l8u653l8u653l8u6.jpg
-date: 2025-03-09 15:30:00+0000
+date: 2025-03-09 00:00:00+0000
 categories:
   - Flutter
 tags:
