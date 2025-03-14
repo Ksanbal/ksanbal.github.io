@@ -97,7 +97,7 @@ API 응답에는 `meta`에 불러온 개수인 `count`와 이 이상 데이터�
 
 Generic은 클래스 내부에서 사용할 데이터의 타입을 외부에서 지정하는 기법이다.
 
-Class를 정의할 때 객체의 타입이 String일지 int일지 상황에 따라 다를 수 있다. 상품 페이지에서는 상품 목록을 불러와야 하고, 가게 페이지에서는 가게 목록을 불러올 수 있게 각
+Class를 정의할 때 객체의 타입이 String일지 int일지 상황에 따라 다를 수 있다. 상품 페이지에서는 상품 목록을 불러와야 하고, 가게 페이지에서는 가게 목록을 불러올 수 있어야 한다. 타입에 유동적으로 대응하기 위해 Class 선언에서 타입을 입력받아 속성을 지정하고, 인스턴스 생성 시에 타입을 지정해 사용한다.
 
 ```dart
 class MyList<T> {
@@ -198,14 +198,14 @@ class PaginationError extends PaginationBase {
 
 ```dart
 class PaginationProvider<T extends IModelWithId, U extends IBasePaginationRepository<T>>
-    extends StateNotifier<CursorPaginationBase> {
+    extends StateNotifier<PaginationBase> {
 
   // repository를 제네릭을 받아와서 모든 repository에서 공통으로 사용할 수 있게 처리
   final U repository;
 
   PaginationProvider({
     required this.repository,
-  }) : super(CursorPaginationLoading()) {
+  }) : super(PaginationLoading()) {
     // 이 Class가 생성될 때 데이터를 불러오도록 메소드 실행
     paginate();
   }
@@ -223,8 +223,8 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
       // state는 현재 요청하고자 하는 데이터의 인스턴스다. 가게 목록 class의 인스턴스라고 생각 해주길 바란다.
 
       // 이미 데이터가 있고, 강제 새로고침이 아닌 경우
-      if (state is CursorPagination<T> && forceRefetch == false) {
-        final pState = state as CursorPagination<T>;
+      if (state is Pagination<T> && forceRefetch == false) {
+        final pState = state as Pagination<T>;
 
         // 추가적인 데이터가 없는 경우 중지
         if (pState.meta.hasMore == false) {
@@ -233,11 +233,11 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
       }
 
       // 로딩 상태 여부
-      final isLoading = state is CursorPaginationLoading;
+      final isLoading = state is PaginationLoading;
       // 새로고침 여부
-      final isRefetching = state is CursorPaginationRefetching<T>;
+      final isRefetching = state is PaginationRefetching<T>;
       // 추가 요청 여부
-      final isFetchingMore = state is CursorPaginationFetchingMore<T>;
+      final isFetchingMore = state is PaginationFetchingMore<T>;
 
       // 더 불러오라고 했는데 지금 상황이 로딩, 새로고침, 더 보기 상태면 중지
       if (fetchMore && (isLoading || isRefetching || isFetchingMore)) {
@@ -251,10 +251,10 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
 
       // fetchMore - 데이터를 추가로 더 가져오는 상황
       if (fetchMore) {
-        final pState = state as CursorPagination<T>;
+        final pState = state as Pagination<T>;
 
         // 현재 상태를 다음 거를 불러오는 상태로 변경
-        state = CursorPaginationFetchingMore(
+        state = PaginationFetchingMore(
           meta: pState.meta,
           data: pState.data,
         );
@@ -265,17 +265,17 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
       } else {
         // 데이터를 처음부터 가져오는 상황
         // 만약에 데이터가 있는 상황이라면 기존 데이터를 가지고 Fetch 진행
-        if (state is CursorPagination<T> && forceRefetch == false) {
-          final pState = state as CursorPagination<T>;
+        if (state is Pagination<T> && forceRefetch == false) {
+          final pState = state as Pagination<T>;
 
           // 현재 상태를 새로고침 상태로 변경
-          state = CursorPaginationRefetching<T>(
+          state = PaginationRefetching<T>(
             meta: pState.meta,
             data: pState.data,
           );
         } else {
           // 초기 로딩 상태로 변경
-          state = CursorPaginationLoading();
+          state = PaginationLoading();
         }
       }
 
@@ -285,8 +285,8 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
       );
 
       // 데이터를 추가로 불러오는 상태라면 기존 데이터 + 새로운 데이터로 처리한다.
-      if (state is CursorPaginationFetchingMore<T>) {
-        final pState = state as CursorPaginationFetchingMore<T>;
+      if (state is PaginationFetchingMore<T>) {
+        final pState = state as PaginationFetchingMore<T>;
 
         // 기존 데이터 + 새로운 데이터
         state = res.copyWith(
@@ -302,7 +302,7 @@ class PaginationProvider<T extends IModelWithId, U extends IBasePaginationReposi
     } catch (e, stack) {
       // 에러가 발생한 상황으로 변경
       // message는 API에서 반환해줄 수도 있지만 일단 이렇게 처리 해보자.
-      state = CursorPaginationError(message: '데이터를 가져오지 못했습니다');
+      state = PaginationError(message: '데이터를 가져오지 못했습니다');
     }
   }
 }
@@ -361,10 +361,10 @@ class _RestaurantScreenState extends ConsumerState<RestaurantScreen> {
       );
     }
 
-    // CursorPaginationModel
-    // CursorPaginationFetchingMore
-    // CursorPaginationRefetching
-    final cp = data as CursorPagination;
+    // PaginationModel
+    // PaginationFetchingMore
+    // PaginationRefetching
+    final cp = data as Pagination;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
