@@ -88,3 +88,11 @@ Area는 꾸준히 신경 써야 하는 것들, 나의 정체성을 이루는 요
 > [https://www.youtube.com/watch?v=HvSBfnQmEiU](https://www.youtube.com/watch?v=HvSBfnQmEiU)
 >
 > [https://www.youtube.com/watch?v=AsJ0EL8ffro](https://www.youtube.com/watch?v=AsJ0EL8ffro)
+
+---
+
+> 아래 추천 코드를 지원페이지에 입력하면, 등록금 20만 원을 할인 받을 수 있습니다.
+>
+> [항해 플러스 알아보기](https://bit.ly/3JV04NX)
+>
+> 추천인 코드 : QdEIWZ
