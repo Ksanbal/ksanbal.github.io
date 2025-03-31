@@ -9,6 +9,7 @@ tags:
   - PARA
   - SecondBrain
   - 노트정리
+  - 항해플러스
 weight: 1
 draft: false
 ---
