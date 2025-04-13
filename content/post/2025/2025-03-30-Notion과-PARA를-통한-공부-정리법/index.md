@@ -9,6 +9,7 @@ tags:
   - PARA
   - SecondBrain
   - 노트정리
+  - 항해플러스
 weight: 1
 draft: false
 ---
@@ -77,7 +78,7 @@ Area는 꾸준히 신경 써야 하는 것들, 나의 정체성을 이루는 요
 
 ## 마치며
 
-결국 Notion으로 정착한 이유는 Database의 관계를 이용해서 각 영역을 묶어서 사용할 수 있고, 모바일에서 사용하기도 어렵지 않아서 였다. 지극히 개발자스러운 사고방식의 이유일 수는 있으나, 내 나름 사용하기 편한 방식이기 때문인 것 같다.
+결국 Notion으로 정착한 이유는 PARA의 각 영역을 Database의 참조를 이용해서 묶어서 사용할 수 있고, 모바일에서 사용하기도 어렵지 않아서 였다. 지극히 개발자스러운 사고방식의 이유일 수는 있으나, 내 나름 사용하기 편한 방식이기 때문인 것 같다.
 
 최근 Second brain이라고 하면서 정리하는 것들도 알려지면서 다양한 정리법이 나와있는 것 같은데, 그 방법 중 하나라고 봐주면 좋겠다.
 
@@ -88,3 +89,11 @@ Area는 꾸준히 신경 써야 하는 것들, 나의 정체성을 이루는 요
 > [https://www.youtube.com/watch?v=HvSBfnQmEiU](https://www.youtube.com/watch?v=HvSBfnQmEiU)
 >
 > [https://www.youtube.com/watch?v=AsJ0EL8ffro](https://www.youtube.com/watch?v=AsJ0EL8ffro)
+
+---
+
+> 아래 추천 코드를 지원페이지에 입력하면, 등록금 20만 원을 할인 받을 수 있습니다.
+>
+> [항해 플러스 알아보기](https://bit.ly/3JV04NX)
+>
+> 추천인 코드 : QdEIWZ
