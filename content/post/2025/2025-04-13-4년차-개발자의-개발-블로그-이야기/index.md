@@ -101,4 +101,4 @@ Velog는 마크다운을 지원하고 SEO도 잘되고 IT 글들만 모여있어
 >
 > [항해 플러스 알아보기](https://bit.ly/3JV04NX)
 >
-> 추천인 코드 : QdEIWZ
+> 추천인 코드 : kkeKtu

@@ -83,7 +83,7 @@ Area는 꾸준히 신경 써야 하는 것들, 나의 정체성을 이루는 요
 최근 Second brain이라고 하면서 정리하는 것들도 알려지면서 다양한 정리법이 나와있는 것 같은데, 그 방법 중 하나라고 봐주면 좋겠다.
 
 > 참고 자료
-> 
+>
 > [https://youtu.be/lkRQuMIbFYc?si=CxjY6LD_owAdbF6P](https://youtu.be/lkRQuMIbFYc?si=CxjY6LD_owAdbF6P)
 >
 > [https://www.youtube.com/watch?v=HvSBfnQmEiU](https://www.youtube.com/watch?v=HvSBfnQmEiU)
@@ -96,4 +96,4 @@ Area는 꾸준히 신경 써야 하는 것들, 나의 정체성을 이루는 요
 >
 > [항해 플러스 알아보기](https://bit.ly/3JV04NX)
 >
-> 추천인 코드 : QdEIWZ
+> 추천인 코드 : kkeKtu
